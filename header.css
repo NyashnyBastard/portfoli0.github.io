@@ -1,0 +1,63 @@
+html,
+body {
+    margin: 0 30px;
+    background-color: #0D1F2E;
+    scroll-behavior: smooth;
+}
+
+.wrapper__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-family: Comfortaa;
+    font-size: 14pt;
+    color: cadetblue;
+}
+
+.wrapper__name {
+    font-family: Train One;
+    font-size: 32pt;
+    letter-spacing: 10px;
+    color: rgb(108, 214, 179);
+    text-align: center;
+    margin-top: 12rem;
+}
+
+.wrapper__name h1 {
+    color: white;
+    font-size: 64pt;
+    background: repeating-linear-gradient(90deg, #ff0066, #00ccff, #00ff99, #ff0066);
+    background-size: 600vw 600vw;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: slide 10s linear infinite forwards;
+}
+
+@keyframes slide {
+    0% {
+        background-position-x: 0%;
+    }
+    100% {
+        background-position-x: 600vw;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: cadetblue;
+}
+
+h3.change-text {
+    color: white;
+    text-transform;
+    -webkit-transition: all 0.5s ease;
+    background-size: 600vw 600vw;
+    -webkit-background-composite: text;
+    animation: slide 10s linear infinite forwards;
+}
+
+h3.change-text:hover {
+    background: #ff0066;
+    /* Меняем цвет текста */
+}

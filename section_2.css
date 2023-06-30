@@ -1,0 +1,52 @@
+.blog__about_me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: max-content;
+    height: 500px;
+    background-color: #0b1c29;
+    border-radius: 10px;
+    padding-left: 20px;
+    box-shadow: 0px 0px 5px 0px #0b1c29(0, 0, 0, 0.5)
+}
+
+.section__container2 h3 {
+    padding-top: 15px;
+    color: white;
+    font-family: Comfortaa;
+    font-size: 34pt;
+    background: repeating-linear-gradient(90deg, #ff0066, #00ccff, #00ff99, #ff0066);
+    background-size: 600vw 600vw;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: slide 10s linear infinite forwards;
+}
+
+@keyframes slide {
+    0% {
+        background-position-x: 0%;
+    }
+    100% {
+        background-position-x: 600vw;
+    }
+}
+
+.blog__about_me p {
+    font-weight: lighter;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16pt;
+    color: rgb(113, 151, 153);
+}
+
+.block--bottom {
+    display: flex;
+    align-items: first baseline baseline;
+    justify-content: space-evenly;
+}
+
+.blog__about_me--right {
+    display: block;
+    width: auto;
+    margin-top: -35px;
+    padding-right: 20px;
+}

@@ -1,0 +1,141 @@
+section {
+    margin-top: 30%;
+    height: auto;
+}
+
+.slider {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.collections {
+    overflow: hidden;
+}
+
+.collection.active {
+    display: block;
+    animation: fade-in 0.5s ease-in-out;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+button {
+    color: cadetblue;
+    font-weight: normal;
+    border-radius: 10px;
+    border-color: cadetblue;
+    width: 150px;
+    font-family: Comfortaa;
+    cursor: pointer;
+}
+
+.collections h4 {
+    font-family: Comfortaa;
+}
+
+.section__container h3 {
+    color: white;
+    font-family: Comfortaa;
+    font-size: 34pt;
+    background: repeating-linear-gradient(90deg, #ff0066, #00ccff, #00ff99, #ff0066);
+    background-size: 600vw 600vw;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: slide 10s linear infinite forwards;
+}
+
+@keyframes slide {
+    0% {
+        background-position-x: 0%;
+    }
+    100% {
+        background-position-x: 600vw;
+    }
+}
+
+#slider {
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+}
+
+#slider ul {
+    list-style: none;
+    width: 2400px;
+    padding: 0;
+    margin: 0;
+    transition: transform 0.5s;
+}
+
+#slider ul li {
+    float: left;
+}
+
+#slider ul li img {
+    width: 420px;
+    height: 300px;
+}
+
+#slider2 {
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+}
+
+#slider2 ul {
+    list-style: none;
+    width: 2400px;
+    padding: 0;
+    margin: 0;
+    transition: transform 0.5s;
+}
+
+#slider2 ul {
+    list-style: none;
+    width: 3200px;
+    padding: 0;
+    margin: 0;
+    transition: transform 0.5s;
+}
+
+#slider2 ul li {
+    float: left;
+}
+
+#slider2 ul li img {
+    width: 420px;
+    height: 300px;
+}
+
+.collections {
+    color: aliceblue
+}
+
+.slide {
+    height: 400px;
+}
+
+.block__right {
+    display: block;
+    align-content: start;
+}
+
+.slide__card {
+    display: flex;
+    gap: 10px;
+}
